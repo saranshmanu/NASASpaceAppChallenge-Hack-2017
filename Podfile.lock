@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
+  - paper-onboarding (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - paper-onboarding (~> 2.0.1)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  paper-onboarding: a8e001214d9ce9decf78e160b3823f396dbd51ac
 
-PODFILE CHECKSUM: e9ea813ca71134753550f284e1f4e5d7adceb216
+PODFILE CHECKSUM: c5f937f0f5192c1c3a4b90d569543565c7f5b5e8
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1
