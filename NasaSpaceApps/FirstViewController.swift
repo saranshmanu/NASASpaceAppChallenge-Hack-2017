@@ -15,7 +15,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var slideshow: ImageSlideshow!
     
-      let localSource = [ImageSource(imageString: "slide1")!, ImageSource(imageString: "ready")!, ImageSource(imageString: "logo")!, ImageSource(imageString: "ready")!]
+      let localSource = [ImageSource(imageString: "slide1")!, ImageSource(imageString: "slide2")!, ImageSource(imageString: "slide1")!, ImageSource(imageString: "slide2")!]
     
    
     override func viewDidLoad() {
