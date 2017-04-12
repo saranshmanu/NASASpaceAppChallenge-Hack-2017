@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-NasaSpaceApps.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>paper-onboarding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>854A358F694791FC141F75E15F82BB64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85C03A0AF817F54ED052F13228065B19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9DE120585C9AC4016E082738CBAE4B5</key>
+		<key>F1883A945C236CDCF166DE672D76F89C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
