@@ -19,9 +19,43 @@
     </customFonts>
     <scenes>
         <!--Home-->
+        <scene sceneID="p6h-UV-8Md">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="bfP-xm-wUN" customClass="PageViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="zQJ-AA-tyv"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5U6-OE-M4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-1093"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1AI-Pv-Abe">
+            <objects>
+                <viewController storyboardIdentifier="viewControllerLeft" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kEC-kz-oVT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QXu-Fj-eG5"/>
+                        <viewControllerLayoutGuide type="bottom" id="l8y-jk-dbd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dg6-6m-EFL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BZn-ei-JRk">
+                                <rect key="frame" x="41" y="238" width="292" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078556224699999996" green="0.078556939960000002" blue="0.078558862209999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sab-xx-D4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125.5999999999999" y="-1096.1019490254873"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FirstViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -36,7 +70,7 @@
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER9-ma-Us5">
-                                <rect key="frame" x="24" y="485" width="327" height="33"/>
+                                <rect key="frame" x="24" y="534" width="327" height="33"/>
                                 <color key="backgroundColor" red="0.56794506310000004" green="0.80141055579999998" blue="0.97258389000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="REGISTER ">
@@ -62,12 +96,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="-1101.4992503748126"/>
+            <point key="canvasLocation" x="2964" y="-1101.4992503748126"/>
         </scene>
         <!--Register : NASA Space Apps-->
         <scene sceneID="you-1K-qQx">
             <objects>
-                <viewController title="Register : NASA Space Apps" id="OZx-yt-Hfu" customClass="RegisterWebViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register : NASA Space Apps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OZx-yt-Hfu" customClass="RegisterWebViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Esv-mU-v9A"/>
                         <viewControllerLayoutGuide type="bottom" id="44x-f6-1XX"/>
@@ -95,12 +129,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJD-I3-fbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3252" y="-1349.7751124437782"/>
+            <point key="canvasLocation" x="3919.1999999999998" y="-1101.4992503748126"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewControllerRight" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="NasaSpaceApps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -191,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="-421.43928035982015"/>
+            <point key="canvasLocation" x="4936.8000000000002" y="-1101.4992503748126"/>
         </scene>
         <!--Details-->
         <scene sceneID="zMN-cR-kYc">
@@ -206,29 +240,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-LJ-PKR">
-                                <rect key="frame" x="16" y="51" width="343" height="279"/>
+                                <rect key="frame" x="16" y="51" width="343" height="278"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is NASA SpaceApps Challenge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gle-9W-hJw">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-RK-nha">
-                                        <rect key="frame" x="0.0" y="39" width="343" height="122"/>
+                                        <rect key="frame" x="0.0" y="38.5" width="343" height="122"/>
                                         <string key="text">Part of the Open Government Partnership, Space Apps is an international hackathon that occurs over 48 hours in cities around the world to share ideas and engage with open data to address real-world problems, on Earth and in space. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When is it happening ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU0-Wd-Hyq">
-                                        <rect key="frame" x="0.0" y="179" width="343" height="21"/>
+                                        <rect key="frame" x="0.0" y="178.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From 29th of April till 30th of April at VIT Technology Tower, VIT University, Vellore 632014" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nto-6T-Y2H">
-                                        <rect key="frame" x="0.0" y="218" width="343" height="61"/>
+                                        <rect key="frame" x="0.0" y="217" width="343" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -319,7 +353,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="StartingViewCotroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -327,8 +361,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9ON-fo-7Rz" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="dfx-nV-UyP" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="bfP-xm-wUN" kind="relationship" relationship="viewControllers" id="gLX-vZ-3s0"/>
                         <segue destination="7mp-qp-6OQ" kind="relationship" relationship="viewControllers" id="9DR-Mb-iQe"/>
                         <segue destination="bE1-et-HUC" kind="relationship" relationship="viewControllers" id="Gug-9B-9dt"/>
                     </connections>
@@ -337,50 +370,26 @@
             </objects>
             <point key="canvasLocation" x="-713" y="4"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="G7g-oM-HLl">
+        <!--Navigation Controller-->
+        <scene sceneID="Iug-d0-bL2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ON-fo-7Rz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8jG-Xe-BVb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jgr-bm-Dr7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dAa-YO-Es7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="GSR-gh-Ffm"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="H8W-Kx-9ga"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9el-fP-cqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQy-fT-IOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="-1101.4992503748126"/>
-        </scene>
-        <!--Schedule-->
-        <scene sceneID="Ezg-nI-Kbh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dfx-nV-UyP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="second" id="cPa-gy-q4n"/>
-                    <toolbarItems/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YHb-15-iQc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="1gT-VU-Mdh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u2I-RV-ivs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="-421.43928035982015"/>
+            <point key="canvasLocation" x="2024.8" y="-1101.4992503748126"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="logo" width="1000" height="827"/>
     </resources>
 </document>

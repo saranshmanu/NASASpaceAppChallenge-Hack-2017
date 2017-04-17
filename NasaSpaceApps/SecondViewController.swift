@@ -21,7 +21,14 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = blue
+        //tableView.isHidden = true
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        UIView.animate(withDuration: 0.25) {
+//            self.tableView.isHidden = false
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

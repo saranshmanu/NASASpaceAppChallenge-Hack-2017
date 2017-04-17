@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func DoneAction(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StartingViewCotroller")
         self.present(vc!, animated: true, completion: nil)
     }
 }
