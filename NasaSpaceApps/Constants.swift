@@ -23,8 +23,8 @@ extension UIImage {
             return UIImage(asset: self)
         }
     }
-    
     convenience init!(asset: Asset) {
         self.init(named: asset.rawValue)
     }
 }
+let blue = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)

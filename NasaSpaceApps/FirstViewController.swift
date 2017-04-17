@@ -12,6 +12,7 @@ import Alamofire
 import ImageSlideshow
 
 class FirstViewController: UIViewController {
+    
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var slideshow: ImageSlideshow!
     
@@ -46,6 +47,4 @@ class FirstViewController: UIViewController {
     func didTap() {
         slideshow.presentFullScreenController(from: self)
     }
-
-
 }

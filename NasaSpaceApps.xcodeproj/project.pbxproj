@@ -22,6 +22,10 @@
 		18AFB8D81E9D4FAC00DB5C3D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */; };
 		9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E1681E9D609100E8B4BB /* OnboardViewController.swift */; };
 		9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E16A1E9D659A00E8B4BB /* Constants.swift */; };
+		95D9177D1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9177C1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift */; };
+		95D917831EA4F314005E8C02 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */; };
+		95D917841EA4F314005E8C02 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */; };
+		95D917851EA4F314005E8C02 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D917811EA4F20F005E8C02 /* SF-UI-Display-Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.release.xcconfig"; sourceTree = "<group>"; };
 		9540E1681E9D609100E8B4BB /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		9540E16A1E9D659A00E8B4BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95D9177C1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFlowTableViewCell.swift; path = ../EventFlowTableViewCell.swift; sourceTree = "<group>"; };
+		95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		95D917811EA4F20F005E8C02 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
 		C3FE26D71A0CD28DDC7C852A /* Pods_NasaSpaceApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaSpaceApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5A9AFB5B0F2FE3E243516B /* Pods-NasaSpaceApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +129,9 @@
 			children = (
 				1805C04F1E999994001E69DA /* AppDelegate.swift */,
 				1805C0511E999994001E69DA /* FirstViewController.swift */,
-				1805C0531E999994001E69DA /* SecondViewController.swift */,
+				95D9177E1EA4ECEC005E8C02 /* Event Flow */,
 				18030A941E9E450700429A3F /* RegisterWebViewController.swift */,
+				95D917821EA4F215005E8C02 /* Fonts */,
 				18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */,
 				18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */,
 				1805C0551E999994001E69DA /* Main.storyboard */,
@@ -160,6 +169,25 @@
 				C3FE26D71A0CD28DDC7C852A /* Pods_NasaSpaceApps.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95D9177E1EA4ECEC005E8C02 /* Event Flow */ = {
+			isa = PBXGroup;
+			children = (
+				1805C0531E999994001E69DA /* SecondViewController.swift */,
+				95D9177C1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift */,
+			);
+			name = "Event Flow";
+			sourceTree = "<group>";
+		};
+		95D917821EA4F215005E8C02 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */,
+				95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */,
+				95D917811EA4F20F005E8C02 /* SF-UI-Display-Thin.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		FD30E4F3A2438C855B6E43AB /* Pods */ = {
@@ -284,6 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D917831EA4F314005E8C02 /* SF-UI-Display-Medium.otf in Resources */,
+				95D917841EA4F314005E8C02 /* SF-UI-Display-Regular.otf in Resources */,
+				95D917851EA4F314005E8C02 /* SF-UI-Display-Thin.otf in Resources */,
 				1805C05C1E999994001E69DA /* LaunchScreen.storyboard in Resources */,
 				1805C0591E999994001E69DA /* Assets.xcassets in Resources */,
 				1805C0571E999994001E69DA /* Main.storyboard in Resources */,
@@ -360,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1805C0541E999994001E69DA /* SecondViewController.swift in Sources */,
+				95D9177D1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift in Sources */,
 				1805C0501E999994001E69DA /* AppDelegate.swift in Sources */,
 				9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */,
 				18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */,
