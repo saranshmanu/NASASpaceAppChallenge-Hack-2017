@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s1V-rv-9JV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aEV-jD-dzG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -348,35 +348,40 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aql-Rr-iiA">
-                                <rect key="frame" x="62" y="478" width="251" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="62" y="476" width="251" height="36"/>
+                                <color key="backgroundColor" red="0.04327536179198934" green="0.072877687857360554" blue="0.12153300702811243" alpha="0.71750710227272729" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APl-Xm-Yxm">
-                                <rect key="frame" x="62" y="528" width="251" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <rect key="frame" x="62" y="522" width="251" height="36"/>
+                                <color key="backgroundColor" red="0.04327536179198934" green="0.072877687857360554" blue="0.12153300702811243" alpha="0.71750710227272729" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-e9-Cvm">
                                 <rect key="frame" x="62" y="582" width="251" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU5-c1-Kkq">
                                         <rect key="frame" x="0.0" y="0.0" width="115.5" height="36"/>
-                                        <color key="backgroundColor" red="0.14654166996479034" green="0.28569716215133667" blue="0.52558362483978271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="20"/>
                                         <state key="normal" title="Sign Up">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-9O-DAu">
                                         <rect key="frame" x="135.5" y="0.0" width="115.5" height="36"/>
-                                        <color key="backgroundColor" red="0.14654166996479034" green="0.28569716215133667" blue="0.52558362483978271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="20"/>
                                         <state key="normal" title="Dive In">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="49e-Tb-3d3" kind="show" id="3KW-bk-2Mv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -394,10 +399,13 @@
                         <constraints>
                             <constraint firstItem="rpj-Mu-dId" firstAttribute="top" secondItem="bPU-BP-pGR" secondAttribute="bottom" id="0Tm-Sa-ZCK"/>
                             <constraint firstItem="bVA-SC-OLM" firstAttribute="leading" secondItem="P0U-at-fk3" secondAttribute="leadingMargin" constant="51" id="6Wq-3e-Rjm"/>
+                            <constraint firstItem="APl-Xm-Yxm" firstAttribute="height" secondItem="HU5-c1-Kkq" secondAttribute="height" id="79e-f3-64a"/>
                             <constraint firstItem="bPU-BP-pGR" firstAttribute="leading" secondItem="P0U-at-fk3" secondAttribute="leading" id="9Et-Wp-Yua"/>
+                            <constraint firstItem="aql-Rr-iiA" firstAttribute="height" secondItem="HU5-c1-Kkq" secondAttribute="height" id="Cfz-q6-KM1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aql-Rr-iiA" secondAttribute="trailing" constant="46" id="HI5-O4-ljK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bVA-SC-OLM" secondAttribute="trailing" constant="52" id="Jm9-WA-7wd"/>
                             <constraint firstItem="rpj-Mu-dId" firstAttribute="top" secondItem="p3w-e9-Cvm" secondAttribute="bottom" constant="49" id="MO0-It-t7m"/>
+                            <constraint firstItem="APl-Xm-Yxm" firstAttribute="height" secondItem="aql-Rr-iiA" secondAttribute="height" id="Mgx-Wr-jLw"/>
                             <constraint firstItem="p3w-e9-Cvm" firstAttribute="leading" secondItem="P0U-at-fk3" secondAttribute="leadingMargin" constant="46" id="VUN-Cj-pgi"/>
                             <constraint firstItem="aql-Rr-iiA" firstAttribute="leading" secondItem="P0U-at-fk3" secondAttribute="leadingMargin" constant="46" id="XiI-CG-FYO"/>
                             <constraint firstAttribute="trailing" secondItem="bPU-BP-pGR" secondAttribute="trailing" id="bXZ-ng-WDI"/>
@@ -406,12 +414,22 @@
                             <constraint firstItem="DAk-W8-wdq" firstAttribute="top" secondItem="bVA-SC-OLM" secondAttribute="bottom" constant="21" id="gwc-9e-2m7"/>
                             <constraint firstItem="APl-Xm-Yxm" firstAttribute="leading" secondItem="P0U-at-fk3" secondAttribute="leadingMargin" constant="46" id="maI-ns-5dh"/>
                             <constraint firstItem="bPU-BP-pGR" firstAttribute="top" secondItem="P0U-at-fk3" secondAttribute="top" id="p8P-H3-Gme"/>
-                            <constraint firstItem="APl-Xm-Yxm" firstAttribute="top" secondItem="aql-Rr-iiA" secondAttribute="bottom" constant="20" id="t9W-wF-MXq"/>
+                            <constraint firstItem="APl-Xm-Yxm" firstAttribute="top" secondItem="aql-Rr-iiA" secondAttribute="bottom" constant="10" id="t9W-wF-MXq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p3w-e9-Cvm" secondAttribute="trailing" constant="46" id="v8Q-h1-kjt"/>
                             <constraint firstItem="p3w-e9-Cvm" firstAttribute="width" secondItem="APl-Xm-Yxm" secondAttribute="width" id="x6t-ZQ-A3R"/>
                             <constraint firstItem="bVA-SC-OLM" firstAttribute="top" secondItem="Jja-h5-9VL" secondAttribute="bottom" constant="60" id="y4r-i1-72i"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="MO0-It-t7m" id="Zjk-dL-Jsp"/>
+                        <outlet property="loginAction" destination="Akd-9O-DAu" id="hvS-Cu-1en"/>
+                        <outlet property="loginButton" destination="Akd-9O-DAu" id="wdg-ku-d0M"/>
+                        <outlet property="passwordField" destination="APl-Xm-Yxm" id="diE-pq-HGg"/>
+                        <outlet property="signupAction" destination="HU5-c1-Kkq" id="YTC-CI-15f"/>
+                        <outlet property="signupButton" destination="HU5-c1-Kkq" id="vkV-kW-YFI"/>
+                        <outlet property="topConstraint" destination="y4r-i1-72i" id="VqI-Kk-bOf"/>
+                        <outlet property="usernameField" destination="aql-Rr-iiA" id="DRa-bO-lRf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSL-lx-dfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
