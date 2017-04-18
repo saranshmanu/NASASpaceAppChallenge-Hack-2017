@@ -6,6 +6,7 @@ use_frameworks!
 pod 'Alamofire', '~> 4.4'
 pod 'paper-onboarding', '~> 2.0.1'
 pod 'ImageSlideshow', '~> 1.2'
+pod "TimelineTableViewCell"
 
 
 end

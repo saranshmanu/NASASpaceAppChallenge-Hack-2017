@@ -18,6 +18,7 @@
 		1805C0671E999994001E69DA /* NasaSpaceAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805C0661E999994001E69DA /* NasaSpaceAppsTests.swift */; };
 		1805C0721E999994001E69DA /* NasaSpaceAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805C0711E999994001E69DA /* NasaSpaceAppsUITests.swift */; };
 		1805C0811E999A5D001E69DA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1805C0801E999A5D001E69DA /* Alamofire.framework */; };
+		1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827DF851EA606EC003675CD /* TimelineTableViewController.swift */; };
 		18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */; };
 		18AFB8D81E9D4FAC00DB5C3D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */; };
 		9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E1681E9D609100E8B4BB /* OnboardViewController.swift */; };
@@ -64,6 +65,7 @@
 		1805C0711E999994001E69DA /* NasaSpaceAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaSpaceAppsUITests.swift; sourceTree = "<group>"; };
 		1805C0731E999994001E69DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1805C0801E999A5D001E69DA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/NasaSpaceApps-gqmdqtomgkipwufhcibssnwgdtew/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1827DF851EA606EC003675CD /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				18030A941E9E450700429A3F /* RegisterWebViewController.swift */,
 				95D917821EA4F215005E8C02 /* Fonts */,
 				18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */,
+				1827DF851EA606EC003675CD /* TimelineTableViewController.swift */,
 				18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */,
 				1805C0551E999994001E69DA /* Main.storyboard */,
 				9598624D1EA5A8860089BA37 /* LoginViewController.swift */,
@@ -414,6 +417,7 @@
 				9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */,
 				1805C0521E999994001E69DA /* FirstViewController.swift in Sources */,
 				18AFB8D81E9D4FAC00DB5C3D /* FourthViewController.swift in Sources */,
+				1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */,
 				9598624E1EA5A8860089BA37 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

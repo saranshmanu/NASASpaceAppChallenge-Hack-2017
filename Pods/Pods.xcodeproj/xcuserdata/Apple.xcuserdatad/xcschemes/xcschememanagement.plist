@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TimelineTableViewCell-TimelineTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TimelineTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>paper-onboarding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>20CFD9F128F3228C5848023AF384DCD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A7A5D9BECDE48F8D06E0573BCBBE6A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85C03A0AF817F54ED052F13228065B19</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>C13380CA9B160422EBB61C34EBF98AF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
