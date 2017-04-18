@@ -22,6 +22,7 @@
 		18AFB8D81E9D4FAC00DB5C3D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */; };
 		9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E1681E9D609100E8B4BB /* OnboardViewController.swift */; };
 		9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E16A1E9D659A00E8B4BB /* Constants.swift */; };
+		9598624E1EA5A8860089BA37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598624D1EA5A8860089BA37 /* LoginViewController.swift */; };
 		95D9177D1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D9177C1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift */; };
 		95D917831EA4F314005E8C02 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */; };
 		95D917841EA4F314005E8C02 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */; };
@@ -68,6 +69,7 @@
 		6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.release.xcconfig"; sourceTree = "<group>"; };
 		9540E1681E9D609100E8B4BB /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		9540E16A1E9D659A00E8B4BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9598624D1EA5A8860089BA37 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95D9177C1EA4EC5A005E8C02 /* EventFlowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFlowTableViewCell.swift; path = ../EventFlowTableViewCell.swift; sourceTree = "<group>"; };
 		95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
 		95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */,
 				18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */,
 				1805C0551E999994001E69DA /* Main.storyboard */,
+				9598624D1EA5A8860089BA37 /* LoginViewController.swift */,
 				9540E1681E9D609100E8B4BB /* OnboardViewController.swift */,
 				9540E16A1E9D659A00E8B4BB /* Constants.swift */,
 				1805C0581E999994001E69DA /* Assets.xcassets */,
@@ -411,6 +414,7 @@
 				9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */,
 				1805C0521E999994001E69DA /* FirstViewController.swift in Sources */,
 				18AFB8D81E9D4FAC00DB5C3D /* FourthViewController.swift in Sources */,
+				9598624E1EA5A8860089BA37 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
