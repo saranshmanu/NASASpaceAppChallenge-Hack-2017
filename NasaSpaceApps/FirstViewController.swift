@@ -10,9 +10,20 @@
 import UIKit
 import Alamofire
 import ImageSlideshow
+import Firebase
+import FirebaseDatabase
 
-class FirstViewController: UIViewController {
+struct postStruct{
+    let title : String!
+    let message : String!
     
+}
+
+class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    var posts=[postStruct]()
+    
+    @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var Register: UIButton!
     @IBOutlet weak var slideshow: ImageSlideshow!
     
@@ -22,7 +33,28 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let databaseRef = FIRDatabase.database().reference()
+        databaseRef.child("Posts").queryOrderedByKey().observe(.childAdded, with: {
+        snapshot in
+            
+            let snapshotValue = snapshot.value as? NSDictionary
+            let title = snapshotValue?["title"] as! String
+            let message = snapshotValue?["message"] as! String
+            //self.posts.append(postStruct(title:title,message:message))
+
+            self.posts.insert(postStruct(title:title,message:message), at: 0)
+            self.tableview.reloadData()
+            
+      
+            
+            self.tableview.delegate = self
+            self.tableview.dataSource = self
+            
+        })
         
+        
+      // post()
+
         slideshow.backgroundColor = UIColor.white
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.underScrollView
@@ -31,10 +63,10 @@ class FirstViewController: UIViewController {
         slideshow.contentScaleMode = UIViewContentMode.scaleAspectFill
         slideshow.currentPageChanged = { page in
             print("current page:", page)
+
             
         }
         
-      
         slideshow.setImageInputs(localSource)
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.didTap))
@@ -43,8 +75,38 @@ class FirstViewController: UIViewController {
     }
 
  
-
     func didTap() {
         slideshow.presentFullScreenController(from: self)
     }
+    
+    func post(){
+        
+        let title = "Title"
+        let message = "message"
+        let post:[String:AnyObject]=["title": title as AnyObject,
+                                     "message": message as AnyObject]
+        
+        let databaseRef=FIRDatabase.database().reference()
+        databaseRef.child("Posts").childByAutoId().setValue(post)
+        
+        
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let label1 = cell.viewWithTag(1)as! UILabel
+        label1.text=posts[indexPath.row].title
+        
+        let label2 = cell.viewWithTag(2)as! UILabel
+        label2.text=posts[indexPath.row].message
+        
+        return cell
+        
+    }
+
 }
