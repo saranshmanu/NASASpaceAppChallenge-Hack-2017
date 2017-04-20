@@ -20,8 +20,10 @@
 	<string>1</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
-	<key>LSRequiresIPhoneOS</key>
+	<key>FirebaseAppDelegateProxyEnabled</key>
 	<true/>
+	<key>LSRequiresIPhoneOS</key>
+	<false/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -32,6 +32,14 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let connectedRef = FIRDatabase.database().reference(withPath: ".info/connected")
+        connectedRef.observe(.value, with: { snapshot in
+            if let connected = snapshot.value as? Bool, connected {
+                print("Connected")
+            } else {
+                print("Not connected")
+            }
+        })
         // Do any additional setup after loading the view, typically from a nib.
         let databaseRef = FIRDatabase.database().reference()
         databaseRef.child("Posts").queryOrderedByKey().observe(.childAdded, with: {
@@ -101,7 +109,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         let label1 = cell.viewWithTag(1)as! UILabel
         label1.text=posts[indexPath.row].title
-        
+        print(label1)
         let label2 = cell.viewWithTag(2)as! UILabel
         label2.text=posts[indexPath.row].message
         

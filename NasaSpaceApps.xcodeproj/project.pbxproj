@@ -70,6 +70,7 @@
 		1805C0801E999A5D001E69DA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/NasaSpaceApps-gqmdqtomgkipwufhcibssnwgdtew/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1827DF851EA606EC003675CD /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		185D16D01EA8C80800BFE0B9 /* NasaSpaceApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NasaSpaceApps.entitlements; sourceTree = "<group>"; };
 		18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		18AFB8D71E9D4FAC00DB5C3D /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		1805C04E1E999994001E69DA /* NasaSpaceApps */ = {
 			isa = PBXGroup;
 			children = (
+				185D16D01EA8C80800BFE0B9 /* NasaSpaceApps.entitlements */,
 				95D9178A1EA50513005E8C02 /* Home */,
 				1805C04F1E999994001E69DA /* AppDelegate.swift */,
 				18030A941E9E450700429A3F /* RegisterWebViewController.swift */,
@@ -296,6 +298,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -586,6 +591,7 @@
 			baseConfigurationReference = FF5A9AFB5B0F2FE3E243516B /* Pods-NasaSpaceApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NasaSpaceApps/NasaSpaceApps.entitlements;
 				DEVELOPMENT_TEAM = DBTS9L6PYG;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -602,6 +608,7 @@
 			baseConfigurationReference = 6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NasaSpaceApps/NasaSpaceApps.entitlements;
 				DEVELOPMENT_TEAM = DBTS9L6PYG;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
