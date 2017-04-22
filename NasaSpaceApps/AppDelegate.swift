@@ -9,35 +9,31 @@
 import UIKit
 import CoreData
 import Firebase
-import FirebaseMessaging
-import UserNotifications
-
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     var window: UIWindow?
-
-    
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        if !UserDefaults.standard.bool(forKey: "TermsAccepted") {
+            UserDefaults.standard.set(false, forKey: "TermsAccepted")
+        }
+        
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().barTintColor = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)//(colorWithHexValue: 0x2E4960)
+        UITabBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)//(colorWithHexValue: 0x2E4960)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         // Override point for customization after application launch.
          FIRApp.configure()
         
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
-                // Enable or disable features based on authorization.
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        
-        application.registerForRemoteNotifications()
-        
         return true
-    }
+           }
   
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -56,17 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         
-        
-        FIRMessaging.messaging().connect { (error) in
-            
-            switch error {
-            case .some:
-                print("Unable to connect with FCM. \(String(describing: error))")
-            case .none:
-                print("Connected to FCM.")
-            }
-        }
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+            // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -74,21 +60,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
-        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        print(deviceTokenString)
-        
         
     }
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         
-        print("i am not available in simulator \(error)")
-        
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("Message ID \(userInfo["gcm.message_id"]!)")
-        print(userInfo)
+        
     }
+    
     
 }
 

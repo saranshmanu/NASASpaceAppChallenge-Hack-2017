@@ -12,8 +12,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var signupAction: UIButton!
-    @IBOutlet weak var loginAction: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordField: UITextField!
@@ -28,7 +26,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         usernameField.delegate = self
         passwordField.delegate = self
         
-        loginAction.layer.cornerRadius = loginButton.frame.height/2
+        loginButton.layer.cornerRadius = loginButton.frame.height/2
         signupButton.layer.cornerRadius = signupButton.frame.height/2
         usernameField.layer.cornerRadius = usernameField.frame.height/2
         passwordField.layer.cornerRadius = passwordField.frame.height/2

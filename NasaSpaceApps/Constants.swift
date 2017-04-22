@@ -18,6 +18,7 @@ extension UIImage {
         case Shopping_Cart = "Shopping-cart"
         case Stores = "Stores"
         case Wallet = "Wallet"
+        case Ins = "ins"
         
         var image: UIImage {
             return UIImage(asset: self)
