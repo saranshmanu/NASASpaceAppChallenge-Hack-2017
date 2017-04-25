@@ -29,3 +29,8 @@ extension UIImage {
     }
 }
 let blue = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)
+var token = ""
+var nameParticipant = ""
+var skill = ""
+var college = ""
+var activationToken = ""

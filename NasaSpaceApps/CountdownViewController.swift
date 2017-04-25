@@ -21,10 +21,7 @@ class CountdownViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(backAction))
-
         // Do any additional setup after loading the view, typically from a nib.
         let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(printTime), userInfo: nil, repeats: true)
         timer.fire()
@@ -36,10 +33,14 @@ class CountdownViewController: UIViewController {
     {
         dateFormatter.dateFormat = "dd/MM/yy hh:mm:ss"
         let startTime = Date()
-        let endTime = dateFormatter.date(from: "29/04/17 08:00:00")
+        let endTime = dateFormatter.date(from: "24/04/17 08:00:00")
         let timeDifference = userCalendar.dateComponents(requestedComponent, from: startTime, to: endTime!)
         dateLabelOutlet.text = "\(timeDifference.day!)"
         timeLabelOutlet.text = "\(timeDifference.hour!):\(timeDifference.minute!):\(timeDifference.second!)"
+        if startTime > endTime!{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginPageViewController")
+            self.present(vc!, animated: true, completion: nil)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

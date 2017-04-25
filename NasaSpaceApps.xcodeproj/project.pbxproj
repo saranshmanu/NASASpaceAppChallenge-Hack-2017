@@ -20,15 +20,15 @@
 		1813B69F1EA6C9F900019DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */; };
 		1813B6A01EA6C9F900019DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */; };
 		1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827DF851EA606EC003675CD /* TimelineTableViewController.swift */; };
-		18963FFB1EABE2CB00FE8D83 /* NewLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18963FFA1EABE2CB00FE8D83 /* NewLoginViewController.swift */; };
 		18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */; };
 		9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E1681E9D609100E8B4BB /* OnboardViewController.swift */; };
 		9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E16A1E9D659A00E8B4BB /* Constants.swift */; };
-		95571A681EA90F080000BEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95571A671EA90F080000BEB1 /* Main.storyboard */; };
 		95571A6A1EA90FFB0000BEB1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95571A691EA90FFB0000BEB1 /* SignUpViewController.swift */; };
-		95571A6D1EA910570000BEB1 /* QRCodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95571A6C1EA910570000BEB1 /* QRCodeGeneratorViewController.swift */; };
 		95571A6F1EA91BD30000BEB1 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95571A6E1EA91BD30000BEB1 /* CountdownViewController.swift */; };
 		9598624E1EA5A8860089BA37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598624D1EA5A8860089BA37 /* LoginViewController.swift */; };
+		95A3C5E01EAC73AF000B76F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A3C5DF1EAC73AF000B76F3 /* ProfileViewController.swift */; };
+		95A3C5E21EACC3FD000B76F3 /* LiveFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A3C5E11EACC3FD000B76F3 /* LiveFeedsViewController.swift */; };
+		95D29EBE1EAE5B6900F2452A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95571A671EA90F080000BEB1 /* Main.storyboard */; };
 		95D917831EA4F314005E8C02 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */; };
 		95D917841EA4F314005E8C02 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */; };
 		95D917851EA4F314005E8C02 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95D917811EA4F20F005E8C02 /* SF-UI-Display-Thin.otf */; };
@@ -69,16 +69,16 @@
 		1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1827DF851EA606EC003675CD /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		185D16D01EA8C80800BFE0B9 /* NasaSpaceApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NasaSpaceApps.entitlements; sourceTree = "<group>"; };
-		18963FFA1EABE2CB00FE8D83 /* NewLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLoginViewController.swift; sourceTree = "<group>"; };
 		18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		6875B2BB223E26B41AB91ED1 /* Pods-NasaSpaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaSpaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps.release.xcconfig"; sourceTree = "<group>"; };
 		9540E1681E9D609100E8B4BB /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		9540E16A1E9D659A00E8B4BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95571A671EA90F080000BEB1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		95571A691EA90FFB0000BEB1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		95571A6C1EA910570000BEB1 /* QRCodeGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorViewController.swift; sourceTree = "<group>"; };
 		95571A6E1EA91BD30000BEB1 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		9598624D1EA5A8860089BA37 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		95A3C5DF1EAC73AF000B76F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		95A3C5E11EACC3FD000B76F3 /* LiveFeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveFeedsViewController.swift; sourceTree = "<group>"; };
 		95D9177F1EA4F20F005E8C02 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
 		95D917801EA4F20F005E8C02 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
 		95D917811EA4F20F005E8C02 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				1827DF851EA606EC003675CD /* TimelineTableViewController.swift */,
 				18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */,
 				95571A6B1EA9100C0000BEB1 /* Authentication */,
-				95571A6C1EA910570000BEB1 /* QRCodeGeneratorViewController.swift */,
+				95A3C5DF1EAC73AF000B76F3 /* ProfileViewController.swift */,
 				9540E16A1E9D659A00E8B4BB /* Constants.swift */,
 				1805C0581E999994001E69DA /* Assets.xcassets */,
 				95571A671EA90F080000BEB1 /* Main.storyboard */,
@@ -155,6 +155,7 @@
 				1805C05A1E999994001E69DA /* LaunchScreen.storyboard */,
 				1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */,
 				1805C05D1E999994001E69DA /* Info.plist */,
+				95A3C5E11EACC3FD000B76F3 /* LiveFeedsViewController.swift */,
 			);
 			path = NasaSpaceApps;
 			sourceTree = "<group>";
@@ -191,7 +192,6 @@
 			children = (
 				95571A691EA90FFB0000BEB1 /* SignUpViewController.swift */,
 				9598624D1EA5A8860089BA37 /* LoginViewController.swift */,
-				18963FFA1EABE2CB00FE8D83 /* NewLoginViewController.swift */,
 			);
 			name = Authentication;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 				TargetAttributes = {
 					1805C04B1E999994001E69DA = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = DBTS9L6PYG;
+						DevelopmentTeam = JCRFV5ZL52;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95571A681EA90F080000BEB1 /* Main.storyboard in Resources */,
+				95D29EBE1EAE5B6900F2452A /* Main.storyboard in Resources */,
 				95D917831EA4F314005E8C02 /* SF-UI-Display-Medium.otf in Resources */,
 				95D917841EA4F314005E8C02 /* SF-UI-Display-Regular.otf in Resources */,
 				95D917851EA4F314005E8C02 /* SF-UI-Display-Thin.otf in Resources */,
@@ -422,9 +422,9 @@
 				9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */,
 				18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */,
 				18030A951E9E450700429A3F /* RegisterWebViewController.swift in Sources */,
-				18963FFB1EABE2CB00FE8D83 /* NewLoginViewController.swift in Sources */,
 				9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */,
-				95571A6D1EA910570000BEB1 /* QRCodeGeneratorViewController.swift in Sources */,
+				95A3C5E01EAC73AF000B76F3 /* ProfileViewController.swift in Sources */,
+				95A3C5E21EACC3FD000B76F3 /* LiveFeedsViewController.swift in Sources */,
 				1805C0521E999994001E69DA /* FirstViewController.swift in Sources */,
 				1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */,
 				95571A6A1EA90FFB0000BEB1 /* SignUpViewController.swift in Sources */,
@@ -576,7 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DBTS9L6PYG;
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -593,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DBTS9L6PYG;
+				DEVELOPMENT_TEAM = JCRFV5ZL52;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

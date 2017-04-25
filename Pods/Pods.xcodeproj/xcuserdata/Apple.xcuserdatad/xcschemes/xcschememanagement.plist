@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AlamofireImage.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,11 +25,6 @@
 			<false/>
 		</dict>
 		<key>Pods-NasaSpaceApps.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,22 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FE9901D4C7DB51FB2B44ED8368709CD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>436DD5906B4E1B432C3F41AB48B014DF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>56C113DEA418277ED26AF28B45675F5E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84EBAD05698C96BAFB4BF704808BF94A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<key>89AC1944621FADAF5DCABBF4566A19EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1596832A820859D1C48987E8DB5334D</key>
+		<key>94F9DACD258A9C7458664BC12DC2F063</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0D7189C1A1F0AB6427A972D53DFFDB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

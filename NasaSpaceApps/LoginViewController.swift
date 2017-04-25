@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -17,6 +18,51 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     
+    @IBAction func loginAction(_ sender: Any) {
+        signupButton.isEnabled = false
+        loginButton.isEnabled = false
+        if (usernameField.text?.isEmpty)! && (passwordField.text?.isEmpty)!{
+            signupButton.isEnabled = true
+            loginButton.isEnabled = true
+            let alertController = UIAlertController(title: "Fields are empty", message: "", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            print("Fields are empty")
+            
+        }
+        else{
+            print("login action taking place! waiting for backend to respond")
+            let header = ["email":usernameField.text!,"password":passwordField.text!]
+            Alamofire.request("https://nasaspaceapps.herokuapp.com/auth/login", method: .post, parameters: header).responseJSON{ response in
+                if response.result.value == nil{
+                    print("found nil value from backend")
+                    return
+                }
+                print(response.result.value!)
+                let details = response.result.value as! NSDictionary
+                if response.result.isSuccess && String(describing: details["code"]!) == "0"{
+                    print("Login successful")
+                    token = details["token"] as! String
+                    self.signupButton.isEnabled = true
+                    self.loginButton.isEnabled = true
+                    //Go to the HomeViewController if sucessful
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Start")
+                    self.present(vc!, animated: true, completion: nil)
+                }
+                else{
+                    print("Login failure")
+                    self.signupButton.isEnabled = true
+                    self.loginButton.isEnabled = true
+                    let alertController = UIAlertController(title: "Error", message: "Something went wrong! Please try after some time!", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,7 +97,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var keyboard_flag = 0
     
     func keyboardWillHide(_ notification: Notification) {
-        print("HIDE")
         if keyboard_flag == 0 {
             return
         }
@@ -70,7 +115,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func keyboardWillShow(_ notification: Notification) {
-        print("SHow")
         if keyboard_flag != 0 {
             return
         }

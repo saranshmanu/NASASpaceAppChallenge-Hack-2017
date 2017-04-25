@@ -35,6 +35,21 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         } else {
             self.performSegue (withIdentifier: "testy", sender: self)
         }
+
+        let databaseRef = FIRDatabase.database().reference()
+        databaseRef.child("Posts").queryOrderedByKey().observe(.value, with: {snap in
+            self.posts.removeAll()
+                    databaseRef.child("Posts").queryOrderedByKey().observe(.childAdded, with: {
+                        snapshot in
+                        let snapshotValue = snapshot.value as? NSDictionary
+                        let title = snapshotValue?["title"] as! String
+                        let message = snapshotValue?["message"] as! String
+                        self.posts.insert(postStruct(title:title,message:message), at: 0)
+                        self.tableview.reloadData()
+                        
+                    })
+            self.tableview.reloadData()
+        })
     }
 
     override func viewDidLoad() {
@@ -42,6 +57,7 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         self.tableview.delegate = self
         self.tableview.dataSource = self
+        
         let connectedRef = FIRDatabase.database().reference(withPath: ".info/connected")
         connectedRef.observe(.value, with: { snapshot in
             if let connected = snapshot.value as? Bool, connected {
@@ -51,18 +67,8 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
             }
         })
         // Do any additional setup after loading the view, typically from a nib.
-        let databaseRef = FIRDatabase.database().reference()
-        databaseRef.child("Posts").queryOrderedByKey().observe(.childAdded, with: {
-            snapshot in
-            let snapshotValue = snapshot.value as? NSDictionary
-            let title = snapshotValue?["title"] as! String
-            let message = snapshotValue?["message"] as! String
-            //self.posts.append(postStruct(title:title,message:message))
-            self.posts.insert(postStruct(title:title,message:message), at: 0)
-            self.tableview.reloadData()
- 
-        })
-      // post()
+
+       //post()
         slideshow.backgroundColor = UIColor.clear
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.underScrollView
@@ -98,10 +104,10 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let label1 = cell.viewWithTag(1)as! UILabel
-        label1.text=posts[indexPath.row].title
+        label1.text = posts[indexPath.row].title
         print(label1)
         let label2 = cell.viewWithTag(2)as! UILabel
-        label2.text=posts[indexPath.row].message
+        label2.text = posts[indexPath.row].message
         return cell
         
     }
