@@ -18,7 +18,7 @@ class RegisterWebViewController: UIViewController {
         
 
         // Do any additional setup after loading the vie
-        let url=URL(string: "https://2017.spaceappschallenge.org/locations/vellore/")
+        let url=URL(string: "")
         
         RegisterLink.loadRequest(URLRequest(url:url!))
         

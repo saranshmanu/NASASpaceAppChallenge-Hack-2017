@@ -22,11 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(false, forKey: "TermsAccepted")
         }
         
+        if !UserDefaults.standard.bool(forKey: "TokenBool") {
+            UserDefaults.standard.set(false, forKey: "TokenBool")
+            UserDefaults.standard.setValue("", forKey: "TokenValue")
+
+        }
+        let defaults = UserDefaults.standard
+        let defaultValue = ["MyKey" : ""]
+        defaults.register(defaults: defaultValue)
         UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().barTintColor = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)//(colorWithHexValue: 0x2E4960)
         UITabBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().isTranslucent = true
-        UINavigationBar.appearance().barTintColor = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 1.0)//(colorWithHexValue: 0x2E4960)
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 19/255, green: 32/255, blue: 53/255, alpha: 0)//(colorWithHexValue: 0x2E4960)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         // Override point for customization after application launch.

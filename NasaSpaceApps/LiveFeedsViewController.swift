@@ -23,11 +23,11 @@ class LiveFeedsViewController: UIViewController,UITableViewDataSource, UITableVi
     
     
     override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "TermsAccepted") {
-            // Terms have been accepted, proceed as normal
-        } else {
-            self.performSegue (withIdentifier: "testy", sender: self)
-        }
+//        if UserDefaults.standard.bool(forKey: "TermsAccepted") {
+//            // Terms have been accepted, proceed as normal
+//        } else {
+//            self.performSegue (withIdentifier: "testy", sender: self)
+//        }
         let databaseRef = FIRDatabase.database().reference()
         databaseRef.child("Posts").queryOrderedByKey().observe(.value, with: {snap in
             self.posts.removeAll()

@@ -34,3 +34,6 @@ var nameParticipant = ""
 var skill = ""
 var college = ""
 var activationToken = ""
+var item=""
+var quan=""
+var prof = UIImage()

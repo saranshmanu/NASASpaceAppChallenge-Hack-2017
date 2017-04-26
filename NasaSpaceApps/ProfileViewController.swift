@@ -11,6 +11,14 @@ import Alamofire
 
 class ProfileViewController: UIViewController {
 
+    @IBAction func logout(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set("", forKey: "MyKey")
+        defaults.synchronize()
+
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StartingViewCotroller")
+        self.present(vc!, animated: true, completion: nil)
+    }
     @IBOutlet weak var organisation: UILabel!
     @IBOutlet weak var workType: UILabel!
     @IBOutlet weak var name: UILabel!

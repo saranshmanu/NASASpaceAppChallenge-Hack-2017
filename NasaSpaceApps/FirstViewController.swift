@@ -35,6 +35,9 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
         } else {
             self.performSegue (withIdentifier: "testy", sender: self)
         }
+        
+
+        
 
         let databaseRef = FIRDatabase.database().reference()
         databaseRef.child("Posts").queryOrderedByKey().observe(.value, with: {snap in
@@ -54,7 +57,23 @@ class FirstViewController: UIViewController,UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //for assigning value of token for last session
+        Register.isEnabled = false
+        let defaults = UserDefaults.standard
+        token = defaults.string(forKey: "MyKey")!
+        if(token != "")
+        {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Start")
+            self.present(vc!, animated: true, completion: nil)
+        }
+//        token = UserDefaults.standard.value(forKey: "TokenValue") as! String
+//        if UserDefaults.standard.bool(forKey: "Token") {
+//            // Terms have been accepted, proceed as normal
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Start")
+//            self.present(vc!, animated: true, completion: nil)
+//        } else {
+//            
+//        }
         self.tableview.delegate = self
         self.tableview.dataSource = self
         

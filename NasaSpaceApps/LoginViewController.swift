@@ -17,8 +17,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBAction func loginAction(_ sender: Any) {
+        activityIndicator.startAnimating()
         signupButton.isEnabled = false
         loginButton.isEnabled = false
         if (usernameField.text?.isEmpty)! && (passwordField.text?.isEmpty)!{
@@ -29,7 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
             print("Fields are empty")
-            
+            activityIndicator.stopAnimating()
         }
         else{
             print("login action taking place! waiting for backend to respond")
@@ -44,8 +46,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if response.result.isSuccess && String(describing: details["code"]!) == "0"{
                     print("Login successful")
                     token = details["token"] as! String
+//                    UserDefaults.standard.set(true, forKey: "Token")
+//                    UserDefaults.standard.setValue(token, forKey: "TokenValue")
+                    let defaults = UserDefaults.standard
+                    defaults.set(token, forKey: "MyKey")
+                    defaults.synchronize()
                     self.signupButton.isEnabled = true
                     self.loginButton.isEnabled = true
+                    self.activityIndicator.stopAnimating()
                     //Go to the HomeViewController if sucessful
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Start")
                     self.present(vc!, animated: true, completion: nil)
@@ -54,6 +62,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     print("Login failure")
                     self.signupButton.isEnabled = true
                     self.loginButton.isEnabled = true
+                    self.activityIndicator.stopAnimating()
                     let alertController = UIAlertController(title: "Error", message: "Something went wrong! Please try after some time!", preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
@@ -65,9 +74,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(backAction))
         // Do any additional setup after loading the view.
-        
         // for hitting return
         usernameField.delegate = self
         passwordField.delegate = self
@@ -141,6 +149,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
         return true
     }
+    
+    func backAction(){
+        //print("Back Button Clicked")
+        dismiss(animated: true, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

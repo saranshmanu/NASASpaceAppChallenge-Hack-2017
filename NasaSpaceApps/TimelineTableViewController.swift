@@ -15,19 +15,19 @@ class TimelineTableViewController: UITableViewController {
     let data:[Int: [(TimelinePoint, UIColor, String, String, String?, String?)]] = [0:[
         (TimelinePoint(), UIColor.black, "8:00 am", "Registration Check \nAll the Registered Participants acknowledge there presence followed by simultaneous Ice-Breaking Sessions.", nil, "ins"),
         (TimelinePoint(), UIColor.black, "10:00 am", "HACK101 \nNASA SpaceApps 2017 would be explained and problem statements would be discussed. All the participants would be introduced to NASA Open Data and the judging criteria.", nil, nil),
-        (TimelinePoint(color: UIColor.black, filled: false), UIColor.red, "11:00 am", "Hacking Begins\nParticipants are expected to get a sense of problem statements by now. Hack Begins. Participants would be given HackerSpace, some plug points and a good WiFi Connection.", "150 mins", "ready"),
+        (TimelinePoint(color: UIColor.black, filled: false), UIColor.red, "11:00 am", "Hacking Begins\nParticipants are expected to get a sense of problem statements by now. Hack Begins. Participants would be given HackerSpace, some plug points and a good WiFi Connection.", "", "ready"),
         (TimelinePoint(), UIColor.black, "01:00 pm", "Lunch\nTake a break, Relax!", nil, nil),
-        (TimelinePoint(), UIColor.black, "02:00 pm", "HackShop Opens\nHardware components will be given to the Teams, if required, on a First-Come-First-Serve basis.", "60 mins", nil),
-        (TimelinePoint(), UIColor.black, "04:00 pm", "Open Mentor Hours\nMentors from diverse backgrounds would be accessible to all the participants.", "30 mins", nil),
-        (TimelinePoint(), UIColor.clear, "08:00 pm", "Dinner\nFuel Up!", "90 mins", "Apple")
+        (TimelinePoint(), UIColor.black, "02:00 pm", "HackShop Opens\nHardware components will be given to the Teams, if required, on a First-Come-First-Serve basis.", "", nil),
+        (TimelinePoint(), UIColor.black, "04:00 pm", "Open Mentor Hours\nMentors from diverse backgrounds would be accessible to all the participants.", "", nil),
+        (TimelinePoint(), UIColor.clear, "08:00 pm", "Dinner\nFuel Up!", "", "Apple")
         ], 1:[
-            (TimelinePoint(), UIColor.black, "01:00 am", "Midnight Munchies\nSnacks and Caffeine will be provided to the hackers to keep up with the energy!", "60 mins", nil),
-            (TimelinePoint(), UIColor.black, "06:00 am", "Team Acknowledgement\nFinal Team List would be prepared for scheduling the presentations.", "30 mins", "Apple"),
-            (TimelinePoint(), UIColor.black, "09:00 am", "Breakfast\nRelax For a While!", "120 mins", "Apple"),
-            (TimelinePoint(), UIColor.black, "11:00 am", "Practice Presentations\nTime will be given to better help the hackers with their own mock presentation.", "150 mins", "Apple"),
-            (TimelinePoint(), UIColor.black, "02:00 pm", "Final Presentations\nThe time for the participants to Show Off their hard work done during the SpaceAppsChallenge!", "60 mins", nil),
-            (TimelinePoint(), UIColor.black, "05:00 pm", "Judges Deliberation and Feedback Session\nParticipants will be reminded to focus on giving kind, specific and helpful feedback.", "60 mins", "Apple"),
-            (TimelinePoint(), backColor: UIColor.clear, "06:00 pm", "Closing Ceremony and Results\nThe most awaited moment!", "30 mins", "Apple")
+            (TimelinePoint(), UIColor.black, "01:00 am", "Midnight Munchies\nSnacks and Caffeine will be provided to the hackers to keep up with the energy!", "", nil),
+            (TimelinePoint(), UIColor.black, "06:00 am", "Team Acknowledgement\nFinal Team List would be prepared for scheduling the presentations.", "", "Apple"),
+            (TimelinePoint(), UIColor.black, "09:00 am", "Breakfast\nRelax For a While!", "", "Apple"),
+            (TimelinePoint(), UIColor.black, "11:00 am", "Practice Presentations\nTime will be given to better help the hackers with their own mock presentation.", "", "Apple"),
+            (TimelinePoint(), UIColor.black, "02:00 pm", "Final Presentations\nThe time for the participants to Show Off their hard work done during the SpaceAppsChallenge!", "", nil),
+            (TimelinePoint(), UIColor.black, "05:00 pm", "Judges Deliberation and Feedback Session\nParticipants will be reminded to focus on giving kind, specific and helpful feedback.", "", "Apple"),
+            (TimelinePoint(), backColor: UIColor.clear, "06:00 pm", "Closing Ceremony and Results\nThe most awaited moment!", "", "Apple")
         ]]
     
     override func viewDidLoad() {

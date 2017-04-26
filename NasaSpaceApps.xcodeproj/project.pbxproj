@@ -19,6 +19,10 @@
 		1813B69E1EA6C9F900019DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */; };
 		1813B69F1EA6C9F900019DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */; };
 		1813B6A01EA6C9F900019DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */; };
+		181673651EAFDA90003C9DC2 /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181673641EAFDA90003C9DC2 /* ComponentViewController.swift */; };
+		181673691EAFF139003C9DC2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181673681EAFF139003C9DC2 /* TableViewCell.swift */; };
+		1816736B1EAFF500003C9DC2 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816736A1EAFF500003C9DC2 /* MentorViewController.swift */; };
+		1816736D1EB006B1003C9DC2 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816736C1EB006B1003C9DC2 /* ImageTableViewCell.swift */; };
 		1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827DF851EA606EC003675CD /* TimelineTableViewController.swift */; };
 		18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */; };
 		9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540E1681E9D609100E8B4BB /* OnboardViewController.swift */; };
@@ -67,6 +71,10 @@
 		1805C0731E999994001E69DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1805C0801E999A5D001E69DA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/NasaSpaceApps-gqmdqtomgkipwufhcibssnwgdtew/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1813B69D1EA6C9F900019DF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		181673641EAFDA90003C9DC2 /* ComponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentViewController.swift; sourceTree = "<group>"; };
+		181673681EAFF139003C9DC2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1816736A1EAFF500003C9DC2 /* MentorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
+		1816736C1EB006B1003C9DC2 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		1827DF851EA606EC003675CD /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		185D16D01EA8C80800BFE0B9 /* NasaSpaceApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NasaSpaceApps.entitlements; sourceTree = "<group>"; };
 		18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +150,11 @@
 				1805C04F1E999994001E69DA /* AppDelegate.swift */,
 				9540E1681E9D609100E8B4BB /* OnboardViewController.swift */,
 				1805C0511E999994001E69DA /* FirstViewController.swift */,
+				181673641EAFDA90003C9DC2 /* ComponentViewController.swift */,
+				181673681EAFF139003C9DC2 /* TableViewCell.swift */,
 				18030A941E9E450700429A3F /* RegisterWebViewController.swift */,
+				1816736C1EB006B1003C9DC2 /* ImageTableViewCell.swift */,
+				1816736A1EAFF500003C9DC2 /* MentorViewController.swift */,
 				95D917821EA4F215005E8C02 /* Fonts */,
 				1827DF851EA606EC003675CD /* TimelineTableViewController.swift */,
 				18AFB8D51E9D4F9300DB5C3D /* ThirdViewController.swift */,
@@ -286,7 +298,7 @@
 				TargetAttributes = {
 					1805C04B1E999994001E69DA = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = JCRFV5ZL52;
+						DevelopmentTeam = DBTS9L6PYG;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -392,7 +404,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EA5F1910BA25537FAF7EC88B /* [CP] Embed Pods Frameworks */ = {
@@ -420,13 +432,17 @@
 				1805C0501E999994001E69DA /* AppDelegate.swift in Sources */,
 				95571A6F1EA91BD30000BEB1 /* CountdownViewController.swift in Sources */,
 				9540E1691E9D609100E8B4BB /* OnboardViewController.swift in Sources */,
+				1816736B1EAFF500003C9DC2 /* MentorViewController.swift in Sources */,
 				18AFB8D61E9D4F9300DB5C3D /* ThirdViewController.swift in Sources */,
 				18030A951E9E450700429A3F /* RegisterWebViewController.swift in Sources */,
+				181673691EAFF139003C9DC2 /* TableViewCell.swift in Sources */,
 				9540E16B1E9D659A00E8B4BB /* Constants.swift in Sources */,
 				95A3C5E01EAC73AF000B76F3 /* ProfileViewController.swift in Sources */,
+				1816736D1EB006B1003C9DC2 /* ImageTableViewCell.swift in Sources */,
 				95A3C5E21EACC3FD000B76F3 /* LiveFeedsViewController.swift in Sources */,
 				1805C0521E999994001E69DA /* FirstViewController.swift in Sources */,
 				1827DF861EA606EC003675CD /* TimelineTableViewController.swift in Sources */,
+				181673651EAFDA90003C9DC2 /* ComponentViewController.swift in Sources */,
 				95571A6A1EA90FFB0000BEB1 /* SignUpViewController.swift in Sources */,
 				9598624E1EA5A8860089BA37 /* LoginViewController.swift in Sources */,
 			);
@@ -576,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				DEVELOPMENT_TEAM = DBTS9L6PYG;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -593,7 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JCRFV5ZL52;
+				DEVELOPMENT_TEAM = DBTS9L6PYG;
 				INFOPLIST_FILE = NasaSpaceApps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
