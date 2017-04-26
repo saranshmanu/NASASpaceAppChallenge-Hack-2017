@@ -274,7 +274,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8jG-Xe-BVb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Rocket_25" id="kw6-nP-Dnq"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dAa-YO-Es7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dAa-YO-Es7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -293,7 +293,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZlJ-qA-iUo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="Clock_25" id="lEi-4C-rxH"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="p1v-xM-aPb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p1v-xM-aPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -597,7 +597,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzA-Pp-qtX">
-                                <rect key="frame" x="76.5" y="203" width="222" height="119.5"/>
+                                <rect key="frame" x="77" y="203" width="222" height="119.5"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="100"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -673,19 +673,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K6k-cy-LsZ">
                                                             <rect key="frame" x="127.5" y="30" width="211.5" height="80"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-mN-6LO">
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-mN-6LO">
                                                                     <rect key="frame" x="0.0" y="0.0" width="211.5" height="26.5"/>
                                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="20"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnG-J7-MLu">
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnG-J7-MLu">
                                                                     <rect key="frame" x="0.0" y="26.5" width="211.5" height="27"/>
                                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-Wa-oA5">
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg3-Wa-oA5">
                                                                     <rect key="frame" x="0.0" y="53.5" width="211.5" height="26.5"/>
                                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -750,7 +750,7 @@
                             <constraint firstItem="Qy9-Fp-9Mo" firstAttribute="top" secondItem="ZQx-U8-aJ3" secondAttribute="bottom" id="usv-DN-tEQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mentors" image="component" selectedImage="Counselor_25" id="kfE-pC-nDm"/>
+                    <tabBarItem key="tabBarItem" title="Mentors" image="Counselor_25" selectedImage="Counselor_25" id="kfE-pC-nDm"/>
                     <connections>
                         <outlet property="tableview" destination="ZQx-U8-aJ3" id="5y7-wu-T44"/>
                     </connections>
@@ -787,19 +787,19 @@
                                                 <color key="textColor" white="1" alpha="0.80792297980000005" colorSpace="deviceWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saransh Mittal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-Pi-JuP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMo-Pi-JuP">
                                                 <rect key="frame" x="0.0" y="49.5" width="363" height="37"/>
                                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="31"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.80111663509999997" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-0K-6Og">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contribution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-0K-6Og">
                                                 <rect key="frame" x="0.0" y="90.5" width="363" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.80111663509999997" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIT Vellore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-hP-ybH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-hP-ybH">
                                                 <rect key="frame" x="0.0" y="115" width="363" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.80000000000000004" blue="1" alpha="0.76029829550000005" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1089,7 +1089,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jJy-BD-sfL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zvy-pk-8ME">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zvy-pk-8ME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1209,7 +1209,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LoginPageViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5gu-zg-miM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ayw-ng-RnN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ayw-ng-RnN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1228,7 +1228,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TVw-ov-IQA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="u4s-xz-Ofl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aXg-u9-WoK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aXg-u9-WoK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1408,7 +1408,6 @@
         <image name="Profile" width="25" height="25"/>
         <image name="Rocket_25" width="25" height="25"/>
         <image name="Space Apps 2017" width="252" height="252"/>
-        <image name="component" width="25" height="25"/>
         <image name="ieee" width="256" height="256"/>
         <image name="logo" width="334" height="274"/>
         <image name="ready" width="256" height="256"/>
